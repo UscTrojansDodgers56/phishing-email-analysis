@@ -1,0 +1,12 @@
+ioc_type,value,sample,mitre,context
+ipv4,89.144.44.2,sample-10,T1566,Sending IP (originating Received hop)
+domain,thcultarfdes.co.uk,sample-10,T1566,Envelope sender (smtp.mailfrom / HELO)
+domain,access-accsecurity.com,sample-10,T1566,Spoofed display domain (header.from)
+email,sotrecognizd@gmail.com,sample-10,T1566,Collection point (Reply-To + mailto buttons)
+domain,thebandalisty.com,sample-10,T1027,Tracking pixel beacon host
+ipv4,84.34.166.151,sample-12,T1566.002,Sending IP (relay smtp2.wp-cloud.fi)
+domain,ilonasavola.com,sample-12,T1566.002,Envelope sender (likely compromised hosting account)
+domain,ses.binance.com,sample-12,T1566.002,Spoofed display domain (header.from)
+url,https://zzdzw.com/,sample-12,T1566.002,Credential-harvesting payload URL
+ipv4,38.38.177.142,sample-12,T1566.002,Payload site serving IP
+sha256,7eef3d901005d440c98cb303bc95eb67de05691cab0ec65ecedef10d2b89b42f,sample-12,T1566.002,Phishing page body hash (survives domain rotation)
