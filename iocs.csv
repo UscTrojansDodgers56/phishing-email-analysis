@@ -1,0 +1,11 @@
+indicator,type,sample,impersonated_brand,role,mitre,context
+thcultarfdes.co.uk,domain,Sample 1,Microsoft,Attacker sending domain,T1566,"Received-chain origin; SPF none, DKIM none, DMARC permerror action=none"
+89.144.44.2,ipv4,Sample 1,Microsoft,Attacker sending IP,T1566,"Origin of 'Received: from thcultarfdes.co.uk'"
+access-accsecurity.com,domain,Sample 1,Microsoft,Spoofed From domain,T1566,"header.from / From: no-reply@access-accsecurity.com"
+sotrecognizd@gmail.com,email,Sample 1,Microsoft,Exfil destination (mailto),T1566,"'Report The User' and Unsubscribe buttons are mailto links to this address; also the Reply-To"
+103.225.77.255,ipv4,Sample 1,Microsoft,Decoy shown in lure body,T1566,"Fake Russia/Moscow sign-in IP displayed to the victim - NOT attacker infrastructure, cosmetic only"
+zzdzw.com,domain,Sample 2,Binance,Phishing payload URL,T1566.002,"Final URL https://zzdzw.com/ ; VirusTotal 2/92 ; alphaMountain tagged 'Newly Registered'"
+38.38.177.142,ipv4,Sample 2,Binance,Payload serving IP,T1566.002,"Serving IP for zzdzw.com"
+7eef3d901005d440c98cb303bc95eb67de05691cab0ec65ecedef10d2b89b42f,sha256,Sample 2,Binance,Phishing page body hash,T1566.002,"Body SHA-256 from VirusTotal"
+ilonasavola.com,domain,Sample 2,Binance,Compromised legitimate sender (abused),T1566.002,"smtp.mailfrom / Return-Path - innocent hijacked host, NOT attacker-owned; do not blanket-block"
+84.34.166.151,ipv4,Sample 2,Binance,Compromised legitimate relay (abused),T1566.002,"smtp2.wp-cloud.fi - legitimate WordPress hosting abused to relay the message; NOT attacker-owned; do not blanket-block"
